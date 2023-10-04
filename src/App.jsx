@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import Nav from "./Components/Nav";
+import Middle from "./Components/Middle";
+import MobileNav from "./Components/MobileNav";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,6 +10,8 @@ function App() {
   return (
     <>
       <Nav />
+      <MobileNav/>
+      <Middle />
     </>
   );
 }

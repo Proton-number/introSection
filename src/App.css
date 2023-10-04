@@ -1,5 +1,33 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+
+#desktopNav{
+  display: none;
+}
+
+
+#mobileNav{
+  display: block;
+  }
+
+
+
+@media screen and (min-width:600px) {
+    
+  #desktopNav{
+      display: block;
+  }
+
+  #mobileNav{
+  display: none;
+  }
+  
+
+}
+.MuiAccordionSummary-content {
+  text-align: left;
 }
