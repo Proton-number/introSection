@@ -44,12 +44,17 @@ function Nav() {
             <b>snap</b>
           </Typography>
           <Stack direction="row" spacing={{ sm: 3, lg: 2 }}>
-            <Stack direction="row" sx={{ alignItems: "center" }}>
+            <Stack
+              direction="row"
+              sx={{
+                alignItems: "center",
+                opacity: "70%",
+                "&:hover": { opacity: "100%" },
+              }}
+            >
               <Typography
                 sx={{
                   cursor: "pointer",
-                  opacity: "70%",
-                  "&:hover": { opacity: "100%" },
                 }}
               >
                 <b>Features</b>
@@ -106,12 +111,17 @@ function Nav() {
                 </Stack>
               </Popover>
             </Stack>
-            <Stack direction="row" sx={{ alignItems: "center" }}>
+            <Stack
+              direction="row"
+              sx={{
+                alignItems: "center",
+                opacity: "70%",
+                "&:hover": { opacity: "100%" },
+              }}
+            >
               <Typography
                 sx={{
                   cursor: "pointer",
-                  opacity: "70%",
-                  "&:hover": { opacity: "100%" },
                 }}
               >
                 <b>Company</b>
