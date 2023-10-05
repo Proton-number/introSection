@@ -34,14 +34,24 @@ function Nav() {
         <Stack
           direction="row"
           sx={{ alignItems: "center" }}
-          spacing={{ sm: 4, lg: 4 }}
+          spacing={{ sm: 2, lg: 4 }}
         >
-          <Typography variant="h3" component="h2">
+          <Typography
+            sx={{ fontSize: { sm: "36px" } }}
+            variant="h3"
+            component="h2"
+          >
             <b>snap</b>
           </Typography>
           <Stack direction="row" spacing={{ sm: 3, lg: 2 }}>
             <Stack direction="row" sx={{ alignItems: "center" }}>
-              <Typography>
+              <Typography
+                sx={{
+                  cursor: "pointer",
+                  opacity: "70%",
+                  "&:hover": { opacity: "100%" },
+                }}
+              >
                 <b>Features</b>
               </Typography>
               <IconButton onClick={(e) => setAnchorEl1(e.currentTarget)}>
@@ -61,19 +71,35 @@ function Nav() {
                 }}
               >
                 <Stack sx={{ padding: "20px" }}>
-                  <Stack spacing={1} direction="row" sx={{ alignItems: "center" }}>
+                  <Stack
+                    spacing={1}
+                    direction="row"
+                    sx={{ alignItems: "center" }}
+                  >
                     <Box component="img" src={todo} />
                     <Typography variant="subtitle1">Todo List</Typography>
                   </Stack>
-                  <Stack spacing={1} direction="row" sx={{ alignItems: "center" }}>
+                  <Stack
+                    spacing={1}
+                    direction="row"
+                    sx={{ alignItems: "center" }}
+                  >
                     <Box component="img" src={calendar} />
                     <Typography variant="subtitle1">Calendar</Typography>
                   </Stack>
-                  <Stack spacing={1} direction="row" sx={{ alignItems: "center" }}>
+                  <Stack
+                    spacing={1}
+                    direction="row"
+                    sx={{ alignItems: "center" }}
+                  >
                     <Box component="img" src={reminders} />
                     <Typography variant="subtitle1">Reminders</Typography>
                   </Stack>
-                  <Stack spacing={1} direction="row" sx={{ alignItems: "center" }}>
+                  <Stack
+                    spacing={1}
+                    direction="row"
+                    sx={{ alignItems: "center" }}
+                  >
                     <Box component="img" src={planning} />
                     <Typography variant="subtitle1">Planning</Typography>
                   </Stack>
@@ -81,7 +107,13 @@ function Nav() {
               </Popover>
             </Stack>
             <Stack direction="row" sx={{ alignItems: "center" }}>
-              <Typography>
+              <Typography
+                sx={{
+                  cursor: "pointer",
+                  opacity: "70%",
+                  "&:hover": { opacity: "100%" },
+                }}
+              >
                 <b>Company</b>
               </Typography>
               <IconButton onClick={(e) => setAnchorEl2(e.currentTarget)}>
@@ -108,19 +140,39 @@ function Nav() {
               </Popover>
             </Stack>
           </Stack>
-          <Typography>
-            <b>Careers</b>
-          </Typography>
-          <Typography>
-            <b>About</b>
-          </Typography>
+          <Stack spacing={4} direction="row" sx={{ alignItems: "center" }}>
+            <Typography
+              sx={{
+                cursor: "pointer",
+                opacity: "70%",
+                "&:hover": { opacity: "100%" },
+              }}
+            >
+              <b>Careers</b>
+            </Typography>
+            <Typography
+              sx={{
+                cursor: "pointer",
+                opacity: "70%",
+                "&:hover": { opacity: "100%" },
+              }}
+            >
+              <b>About</b>
+            </Typography>
+          </Stack>
         </Stack>
         <Stack
           direction="row"
           sx={{ alignItems: "center" }}
           spacing={{ sm: 2, lg: 4 }}
         >
-          <Typography sx={{ cursor: "pointer" }}>
+          <Typography
+            sx={{
+              cursor: "pointer",
+              opacity: "70%",
+              "&:hover": { opacity: "100%" },
+            }}
+          >
             {" "}
             <b>Login</b>
           </Typography>

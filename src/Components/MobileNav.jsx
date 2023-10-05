@@ -70,7 +70,7 @@ function MobileNav() {
       </AppBar>
 
       <Drawer
-        anchor="left"
+        anchor="right"
         open={isDrawerOpen}
         onClose={() => setisDrawerOpen(false)}
       >

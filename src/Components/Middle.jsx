@@ -24,19 +24,21 @@ function Middle() {
 
   return (
     <Stack
+      spacing={{xs:6}}
       direction={{xs:'column',sm:'row',lg:'row'}}
-      sx={{ alignItems: "center", padding: { lg: "30px" } }}
+      sx={{ alignItems: "center", padding: { xs:'60px',sm:'14px', lg: "30px" }, textAlign:{xs:'center', sm:'initial', lg:'initial'}, marginTop:{sm:'100px', lg:0} }}
     >
-      <Stack spacing={{ lg: 4 }}>
-        <Typography sx={{ width: { lg: "63%" } }} variant="h1">
+      <Stack spacing={{ xs:4, lg: 4 }}>
+        <Typography sx={{ width: { sm:'90%',lg: "53%" },  fontSize:{xs:'50px', sm:'68px', lg:'80px'} }} variant="h1">
           <b>Make remote work</b>
         </Typography>
 
-        <Typography sx={{ opacity: "80%", width: { lg: "53%" } }}>
+        <Typography sx={{ opacity: "60%", width: { sm:'78%', lg: "53%" } }}>
           Get your your team in sync, no matter your location, Streamline
           processes, create team rituals, and watch productivity soar.
         </Typography>
 
+        <Box>
         <ThemeProvider theme={theme}>
           <Button
             sx={{
@@ -51,6 +53,7 @@ function Middle() {
               borderRadius: "8px",
               p: "10px",
               width: {
+                xs:'40%',
                 lg: "20%",
               },
             }}
@@ -60,7 +63,8 @@ function Middle() {
             <b> Learn more</b>
           </Button>
         </ThemeProvider>
-        <Stack direction="row" spacing={4} sx={{ alignItems: "center" }}>
+       </Box>
+        <Stack direction="row" spacing={{sm:2,lg:4}} sx={{ alignItems: "center" }}>
           <Box component="img" src={databiz} />
           <Box component="img" src={audiophile} />
           <Box component="img" src={meet} />
@@ -74,6 +78,8 @@ function Middle() {
           src={hero}
           sx={{
             width: {
+              xs: '400px',
+              sm:'250px',
               lg: "490px",
             },
             height: {
